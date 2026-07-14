@@ -1,4 +1,13 @@
 /* ============================
+   RESET BÁSICO PARA IMÁGENES
+   ============================ */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ============================
    HEADER
    ============================ */
 .site-header {
@@ -66,7 +75,8 @@
 .signin-dropdown {
   position: absolute;
   top: calc(100% + 0.5rem);
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: min(260px, 90vw);
   background-color: #fff;
   color: #000;
@@ -105,6 +115,9 @@
 
 @media (min-width: 768px) {
   .signin-dropdown {
+    left: auto;
+    right: 0;
+    transform: none;
     padding: 1.25rem;
   }
 }
