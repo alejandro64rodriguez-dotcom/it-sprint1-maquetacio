@@ -1,3 +1,126 @@
-/*
-    Aquí va tu código CSS
-*/
+/* Header: Flexbox porque es una sola dirección (fila) */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+.header-actions {
+  display: flex;
+  gap: 1rem;
+}
+.btn {
+  padding: 0.6rem 1.25rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-outline {
+  background-color: #000;
+  color: #fff;
+  border: 1.5px solid #fff;
+}
+
+.btn-primary {
+  background-color: #5c5cff; /* azul, ajusta el tono si quieres que sea más exacto al mockup */
+  color: #fff;
+  border: 1.5px solid #5c5cff;
+}
+
+/* Hero: Flexbox en columna, todo centrado */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: #d9d9f5;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+.search-form label {
+  /* si quieres que sea visible como en la imagen, dale estilo aquí */
+  font-weight: 500;
+}
+
+.search-form button {
+  padding: 1rem 1.25rem;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+.search-form {
+  display: flex;
+  width: 100%;
+  max-width: 700px;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 1rem;
+}
+
+/* Cards: Grid porque controla 2 dimensiones (filas y columnas) */
+.help-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem 4rem;
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+/* Dentro de cada card: Flexbox en columna para espaciar título/texto/enlace */
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.card-icon {
+  width: 60px;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer: Grid de 4 columnas */
+.site-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem 2rem;
+  background-color: #000;
+  color: #fff;
+  padding: 1.5rem 2rem;
+  font-size: 0.85rem;
+}
+
+.site-footer h3 {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.site-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.site-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
