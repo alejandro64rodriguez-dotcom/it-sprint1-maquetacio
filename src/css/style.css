@@ -27,9 +27,48 @@
 }
 
 .btn-primary {
-  background-color: #5c5cff; /* azul, ajusta el tono si quieres que sea más exacto al mockup */
+  background-color: #5c5cff;
   color: #fff;
   border: 1.5px solid #5c5cff;
+}
+
+/* Sign in dropdown */
+.signin-wrapper {
+  position: relative;
+}
+.signin-dropdown {
+  position: absolute;
+  top: calc(100% + 0.75rem);
+  right: 0;
+  width: 260px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  padding: 1.25rem;
+  z-index: 10;
+}
+.signin-dropdown-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+.signin-dropdown .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.signin-dropdown .form-group label {
+  font-size: 0.85rem;
+}
+.signin-dropdown .form-group input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.signin-dropdown .forgot-link {
+  text-align: center;
+  font-size: 0.85rem;
 }
 
 /* Hero: Flexbox en columna, todo centrado */
@@ -47,7 +86,6 @@
   font-size: clamp(2rem, 5vw, 3.5rem);
 }
 .search-form label {
-  /* si quieres que sea visible como en la imagen, dale estilo aquí */
   font-weight: 500;
 }
 
